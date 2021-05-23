@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+    <style type="text/css">
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="tutorial" width="300" height="300"></canvas>
+    <!--     矩形
+    <script type="text/javascript">
+      function draw() {
+        var canvas = document.getElementById("tutorial");
+        if (!canvas.getContext) return;
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect(10, 10, 55, 50);
+
+        ctx.fillStyle = "rgba(0,0,200,0.5)";
+        ctx.fillRect(30, 30, 55, 50);
+      }
+      draw();
+    </script> -->
+    <!-- 
+    线段
+    <script>
+      function draw() {
+        var canvas = document.getElementById("tutorial");
+        if (!canvas.getContext) return;
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath(); //新建一条path
+        ctx.moveTo(50, 50); //把画笔移动到指定的坐标
+        ctx.lineTo(200, 50); //绘制一条从当前位置到指定坐标(200, 50)的直线.
+        //闭合路径。会拉一条从当前点到path起始点的直线。如果当前点与起始点重合，则什么都不做
+        ctx.closePath();
+        ctx.stroke(); //绘制路径。
+      }
+      draw();
+    </script> -->
+
+    三角形
+    <script>
+      function draw() {
+        var canvas = document.getElementById("tutorial");
+        if (!canvas.getContext) return;
+        var ctx = canvas.getContext("2d");
+        ctx.beginPath(); //新建一条path
+        ctx.moveTo(50, 50);
+        ctx.lineTo(50, 200);
+        ctx.lineTo(200, 200);
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill()
+      }
+      draw();
+    </script>
+  </body>
+</html>
