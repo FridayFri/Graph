@@ -15,3 +15,9 @@ clip()	    从原始画布剪切任意形状和尺寸的区域
 quadraticCurveTo()	创建二次方贝塞尔曲线
 bezierCurveTo()	创建三次方贝塞尔曲线
 isPointInPath()	如果指定的点位于当前路径中，则返回 true，否则返回 false
+
+scale()	    缩放当前绘图至更大或更小
+rotate()	旋转当前绘图
+translate()	重新映射画布上的 (0,0) 位置
+transform()	替换绘图的当前转换矩阵
+setTransform()	将当前转换重置为单位矩阵，然后运行 transform()
